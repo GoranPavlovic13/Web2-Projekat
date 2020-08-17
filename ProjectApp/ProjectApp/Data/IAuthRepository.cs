@@ -10,5 +10,6 @@ namespace ProjectApp.Data
     {
         Task<User> Register(User user, string password);
         Task<bool> UserExist(string email);
+        Task<User> Login(string email, string password);
     }
 }
