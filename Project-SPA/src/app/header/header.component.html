@@ -13,9 +13,9 @@
           <li><a class="nav-link" href="#"><i class="fa fa-fw fa-car"></i>Rent-a-Car Services</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="#" [routerLink]="['/register']"><i class="fa fa-fw fa-user-plus"></i>Register</a></li>
-          <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="#" [routerLink]="['/login']"><i class="fa fa-fw fa-user"></i>Login</a></li>
-          <!-- <li><a class="nav-link" href="#">Logout</a></li> -->
+          <li *ngIf="!loggedIn()" class="nav-item" routerLinkActive="active"><a class="nav-link" href="#" [routerLink]="['/register']"><i class="fa fa-fw fa-user-plus"></i>Register</a></li>
+          <li *ngIf="!loggedIn()" class="nav-item" routerLinkActive="active"><a class="nav-link" href="#" [routerLink]="['/login']"><i class="fa fa-fw fa-user"></i>Login</a></li>
+          <li *ngIf="loggedIn()"><a class="nav-link" href="#" (click)="logout()">Logout</a></li>
       </ul>
   </div>  
 </nav>
