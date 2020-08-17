@@ -1,0 +1,96 @@
+.form-rounded {
+    border-radius: 3rem;
+}
+.envelope {
+position: relative;
+color: #aaa;
+}
+
+.envelope input {
+border: 1px solid rgb(0, 0, 0);
+border-radius: 100px;
+box-shadow: 0 0 0px rgb(187, 184, 173), 0 8px 10px #f1eded inset;
+}
+
+.envelope input { text-indent: 28px;}
+.envelope .fa-envelope { 
+position: absolute;
+top: 11.5px;
+left: 10px;
+}
+.password {
+position: relative;
+color: #aaa;
+font-size: 19px;
+}
+
+.password input {
+border: 1px solid rgb(0, 0, 0);
+border-radius: 100px;
+box-shadow: 0 0 0px rgb(187, 184, 173), 0 8px 10px #f1eded inset;
+}
+
+.password input { text-indent: 28px;}
+.password .fa-eye-slash { 
+position: absolute;
+top: 11.5px;
+left: 9px;
+}
+
+
+.user {
+    position: relative;
+    color: #aaa;
+    font-size: 19px;
+    }
+    
+    .user input {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    box-shadow: 0 0 0px rgb(187, 184, 173), 0 8px 10px #f1eded inset;
+    }
+    
+    .user input { text-indent: 28px;}
+    .user .fa-user { 
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    }
+
+    .location {
+        position: relative;
+        color: #aaa;
+        font-size: 19px;
+        }
+        
+        .location input {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 100px;
+        box-shadow: 0 0 0px rgb(187, 184, 173), 0 8px 10px #f1eded inset;
+        }
+        
+        .location input { text-indent: 28px;}
+        .location .fa-map-marker { 
+        position: absolute;
+        top: 10.5px;
+        left: 12.5px;
+        }
+
+        .phone {
+            position: relative;
+            color: #aaa;
+            font-size: 19px;
+            }
+            
+            .phone input {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 100px;
+            box-shadow: 0 0 0px rgb(187, 184, 173), 0 8px 10px #f1eded inset;
+            }
+            
+            .phone input { text-indent: 28px;}
+            .phone .fa-phone { 
+            position: absolute;
+            top: 11.5px;
+            left: 10px;
+            }

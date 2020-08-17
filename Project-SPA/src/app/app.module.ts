@@ -8,6 +8,9 @@ import { RegisterComponent } from './user/register/register/register.component';
 import { LoginComponent } from './user/login/login.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes} from './routes';
+import { AuthService } from './_services/auth.service';
+import { HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [		
@@ -19,9 +22,14 @@ import { appRoutes} from './routes';
    ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
